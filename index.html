@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的博客</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/fishBone2.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+	</head>
+	
+	<body style="background-color: 4C4C4C;">
+		<!-- xs下隐藏不显示 -->
+		<div id="hidden-content" class="d-none d-sm-block">
+			<!-- 导航条开始
+				xs (extra small): <576px - 没有特定的最小宽度，适用于所有小于576px的屏幕。
+				sm (small): ≥576px
+				md (medium): ≥768px
+				lg (large): ≥992px
+				xl (extra large): ≥1200px
+				xxl (extra extra large): ≥1400px
+				未来可改：上课笔记 or 摄影记录<-游戏成就（这样会显得好看）
+			-->
+			<div id="tou">
+				<nav class="navbar navbar-expand-lg text-bg-dark border-bottom border-jin" 
+				style="border-width: .8rem !important;">
+					<div class="container-fluid container animated fadeInDown">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.png" style="width: 40px;" class="logo"/>
+						</a>
+						<h1 class="myblogs d-none fst-italic text-jin">我的博客</h1>
+						<button class="navbar-toggler bg-white border-jin" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+							<ul class="mb-2 mb-lg-0 ms-xl-5 px-xxl-5 row w-100 float-start navbar-nav me-auto mb-2 mb-lg-0 text-center  ul-text">
+								<li class="nav-item col">
+									<a class="nav-link active text-jin" aria-current="page" href="#myhome">
+										个人中心
+									</a>
+								</li>
+								<li class="nav-item col px-lg-0 ">
+									<a class="nav-link text-jin" href="#ProjectExperience">
+										项目经验
+									</a>
+								</li>
+								<li class="nav-item col">
+									<a class="nav-link text-jin"  href="#BlogHistory">
+										博客历程
+									</a>
+								</li>
+								<li class="nav-item col">
+									<a class="nav-link text-jin"  href="#WorkExperience">
+										工作经历
+									</a>
+								</li>
+								<li class="nav-item col">
+									<a class="nav-link text-jin"  href="#GameRecord">
+										游戏记录
+									</a>
+								</li>
+								<li class="nav-item col">
+								    <a class="nav-link text-jin example-popover1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="我始终保持积极主动的态度，善于学习新知识，具备良好的团队协作能力和解决问题的能力，能够高效完成工作任务">
+								        自我评价
+								    </a>
+								</li>
+								<li class="nav-item col">
+								    <a class="nav-link text-jin example-popover2" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="13368377044">
+								        联系方式
+								    </a>
+								</li>
+							</ul>
+							<!-- Search部分搜索 -->
+							<form class="d-none d-lg-inline float-end ms-xl-4 ps-xl-4" role="search">
+								<div class="d-flex">
+									<input class="form-control me-2 "  type="search" placeholder="Search" aria-label="Search">
+									<button class="btn btn-outline-success border-jin text-jin " type="submit">Search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<!-- 导航条结束 -->
+			
+			<!-- 内容区域开始 -->
+			<div style="background-color: rgba(0, 0, 0, 0.7);" class="pb-5">
+				<div class="container pt-3" style="background-color: rgba(0, 0, 0, 0.01);">
+					<div class="row">
+						<!-- 轮播图那块 -->
+						<div class=" col-md-12 col-lg-8 animated fadeInLeftBig">
+							<div class="h1 d-none d-xiaoming text-center fw-bolder clearfix mb-2"style="color: #F1CAAC;">
+								<span class="d-block float-start mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+								<span class="title-small">摄&nbsp;像&nbsp;鉴&nbsp;赏</span>
+								<span class="d-block float-end mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+							</div>
+							<div class="d-lg-none"><p></p></div>
+							<div id="carouselExampleCaptions" class="carousel slide">
+							  <div class="carousel-indicators">
+								<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							  </div>
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="images/04.webp" class="d-block w-100" alt="...">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>黄昏下的山涧</h5>
+										<p>At dusk, the mountain stream is golden red, the water gurgling, reflecting the sunset.</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="images/05.webp" class="d-block w-100" alt="...">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>清晨的山雾</h5>
+										<p>In the early morning, the light mountain fog is like a dream, curling around the mountains, like a fairyland.</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img src="images/03.webp" class="d-block w-100" alt="...">
+									<div class="carousel-caption d-none d-md-block">
+										<h5>消融的雪山</h5>
+										<p>The once lofty snow-capped mountains gradually melted under the warm sun, revealing long-lost rocks.</p>
+									</div>
+								</div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+						</div>
+						<!-- 个人介绍卡片 -->
+						<div class="col-sm-12 col-lg-4 animated fadeInRightBig">
+							<div class="mb-5 h1 d-none d-xiaoming text-center fw-bolder clearfix"style="color: #F1CAAC;">
+								<span class="d-block float-start mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+								<span class="title-small">个&nbsp;人&nbsp;信&nbsp;息</span>
+								<span class="d-block float-end mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+							</div>
+							<div class="d-lg-none"><p></p></div>
+							<div class="card mb-3 text-bg-dark rounded-0 border-0"
+							style="background-color: black !important;"
+							>
+								<div class="row">
+									<!-- 卡片图片部分 -->
+									<div class="col-sm-6 col-lg-5 pt-2 card-bg-color touxiang">
+										<img src="images/touxiangdibu.webp"
+										class="img-fluid border-3 rounded-top-pill "
+										style="height: 80px;width: 15rem;"
+										>
+										<img src="images/touxiang.webp"
+										 class="img-fluid border-3 rounded-bottom-pill "
+										 style="height: 15rem;"
+										 >
+									</div>
+									<!-- 卡片信息部分 -->
+									<div class="col-sm-6 col-lg-7">
+										<div class="card-body card-bg-text">
+											<h5 class="card-title fw-bolder text-jin">
+												<i class="bi bi-person"></i>
+												用户：舒锐
+												<small class="d-none d-xxl-inline small
+												 ps-2 fst-italic"
+												 style="font-size: 14px;"
+												 >
+													ShuRui
+												</small>
+											</h5>
+											<p class="card-text">
+												<ul class="list-inline card-text-size">
+													<li class="py-1">
+														<i class="bi bi-person-bounding-box  pe-2"></i>
+														职业：
+														<span class="small">学生</span>
+													</li>
+													<li class="py-1">
+														<i class="bi bi-heart pe-2"></i>
+														爱好：
+														<span class="small d-block ellipsis1">
+															游戏、摄影、长跑、编写代码
+														</span>
+													</li>
+													<li class="py-1">
+														<i class="bi bi-telephone  pe-2"></i>
+														联系方式：
+														<span class="small d-block">13368377044</span>
+													</li>
+													<li class="py-1 ellipsis1">
+														<i class="bi bi-envelope-paper pe-2"></i>
+														邮箱地址：
+														<span class="small d-block">1919737272@qq.com</span>
+													</li>
+													<li class="py-1 shangwulianxijia4">
+														<i class="bi bi-headset  pe-2"></i>
+														商务联系：
+														<span class="small d-block">186-xxxx-8689</span>
+													</li>
+													<li class="d-none d-lg-inline">
+														<small class=" text-white">
+															……
+														</small>
+													</li>
+												</ul>
+											</p>
+											<!-- <p class="card-text ellipsis1">
+												
+											</p> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 项目经验 -->
+						<div class="col-12 container animated fadeInUpBig">
+							<h1 class="text-center fw-bolder py-3 clearfix"
+							style="color: #F1CAAC;" id="ProjectExperience"
+							>
+								<span class="d-block float-start mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+									<a class="title-small text-decoration-none text-jin" href="#tou">
+										项&nbsp;目&nbsp;经&nbsp;验
+									</a>
+								<span class="d-block float-end mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+							</h1>
+							<!-- tab标题类 -->
+							<div class="my-2 bg-dark mt-lg-4 mb-2 container">
+								<ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+								  <li class="nav-item col px-0" role="presentation">
+									<a class="nav-link active fs-3 text-center py-4 text-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"  role="tab" aria-controls="pills-home" aria-selected="true">
+										前端类项目
+									</a>
+								  </li>
+								  <li class="nav-item col px-0" role="presentation">
+									<a aria-disabled="true" class="nav-link fs-3 text-center py-4 text-white" id="pills-profile-tab" role="tab" aria-controls="pills-profile" aria-selected="false">
+										后端类项目
+									</a>
+								  </li>
+								  <li class="nav-item col px-0" role="presentation">
+									<a class="nav-link fs-3 text-center py-4 text-white" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"  role="tab" aria-controls="pills-contact" aria-selected="false">
+										全栈类项目
+									</a>
+								  </li>
+								</ul>
+							</div>
+							<!-- tab内容区域 -->
+							<div class="tab-content" id="pills-tabContent">
+								<!-- 前端类项目 -->
+								<div class="tab-pane fade show active text-white" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+									<div class="row row-sm-lg-12 row-cols-lg-2">
+										<!-- 项目卡牌开始 -->
+										<div>
+											<!-- 个人博客项目 -->
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title text-jin fw-bold" id="myhome">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis2">
+														个人博客采用的是HTML+css+js，是基于Bootstrap开发的项目，可以适应不同大小的窗口
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="index.html" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<!-- 学生管理系统网页项目 -->
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/studentguanli.png" class="img-fluid rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title text-jin fw-bold">
+														学生管理系统网页
+													</h5>
+													<p class="card-text ellipsis2">
+														学生管理系统网页采用的是HTML+css+js，是基于Bootstrap制作的项目，以仿写校园内的信息管理系统网页的练习
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="project/studentguanli/index.html" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<!-- 智能制造学院官网 -->
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/znzz.png" class="img-fluid rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title text-jin fw-bold">
+														智能制造学院官网
+													</h5>
+													<p class="card-text ellipsis2">
+														智能制造学院官网用的是HTML+css+js，是仿写泸州职业技术学院 智能制造校园网站官网网站的Bootstrap项目，以仿写练习为主
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="project/znzz/index.html" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<!-- 奶香国度1 -->
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/blog.png" class="img-fluid rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title text-jin fw-bold">
+														博客(大一学期项目)
+													</h5>
+													<p class="card-text ellipsis2">
+														这是初学html5时的学期项目，用来检验我们各种标签的练习项目，没有框架，也没有什么要求，就是要写出个像样的网页，当时js都没学
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="project/qimoproject/index.html" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<!-- 奶香国度 -->
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/nxgd2.png" class="img-fluid rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title text-jin fw-bold">
+														奶香国度—改良版
+													</h5>
+													<p class="card-text ellipsis2">
+														基于bootstrap改写的奶香国度网页，采用html+css+js，可以适应不同大小的窗口
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="project/nxgd - gai/index.html" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<!-- 通识学院 -->
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/tsxy.png" class="img-fluid rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title text-jin fw-bold">
+														通识学院
+													</h5>
+													<p class="card-text ellipsis2">
+														通识学院采用的是HTML+css+js，是初学前端课程时用来学习加深印象的初级项目网页
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="project/1107通识学院/index.html" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 后端类项目 -->
+								<div class="tab-pane fade text-white" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+									<div class="row row-sm-lg-12 row-cols-lg-2" text-jin fw-bold>
+										<!-- 项目卡牌开始 -->
+										<div>
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-circle mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis2">
+														个人博客采用的是HTML+css+js，基于Bootstrap开发的项目
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="#" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-circle mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis1">
+														个人博客采用的是HTML+css+js，基于Bootstrap开发的项目
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="#" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-circle mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis1">
+														个人博客采用的是HTML+css+js，基于Bootstrap开发的项目
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="#" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-circle mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis1">
+														个人博客采用的是HTML+css+js，基于Bootstrap开发的项目
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="#" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-circle mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis1">
+														个人博客采用的是HTML+css+js，基于Bootstrap开发的项目
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="#" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+										<div>
+											<div class="card mb-3 px-2 text-bg-dark">
+											  <div class="row g-0">
+												<div class="col-md-4">
+												  <img src="images/xaingmu/img01.JPG" class="img-fluid rounded-circle mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+												  <div class="card-body">
+													<h5 class="card-title">
+														个人博客设计
+													</h5>
+													<p class="card-text ellipsis1">
+														个人博客采用的是HTML+css+js，基于Bootstrap开发的项目
+													</p>
+													<a class="btn btn-jin d-block ms-auto text-dark fw-bold" href="#" type="button">
+														预览
+													</a>
+												  </div>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 全栈类项目 -->
+								<div class="tab-pane fade text-white" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+									<div class="row row-sm-lg-12 row-cols-lg-1">
+										<!-- 西蒙购物网 -->
+										<div class="card mb-3 px-2 text-bg-dark">
+											<div class="row g-0">
+												<div class="col-md-4">
+													<img src="images/xaingmu/xmgww.png" class="img-fluid img-fluid1 rounded-1 mt-3 logo" alt="...">
+												</div>
+												<div class="col-md-8">
+													<div class="card-body">
+														<h5 class="card-title text-jin fw-bold">
+															西蒙购物网
+														</h5>
+														<p class="card-text ellipsis2">
+															西蒙购物网是一个简单的Java Web项目，主要由JSP组成，数据源于mysql，
+															有简单的登陆页面，从首页点击对应的按钮进入登陆页面，进行登陆判断成功后才能进入，由Tomcat启动
+														</p>
+														<div class="d-grid gap-2">
+															<button class="btn btn-jin text-dark fw-bold del-text" href="#" type="button" disabled>
+																预览
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- java web购物商城 -->
+										<div class="card mb-3 px-2 text-bg-dark">
+											<div class="row g-0">
+												<div class="col-md-4">
+													<img src="images/xaingmu/e8f23be0-0d97-4e23-9b5e-826aa48a202f.png" class="logo1 img-fluid img-fluid1 rounded-1 mt-3" alt="...">
+												</div>
+												<div class="col-md-8">
+													<div class="card-body">
+														<h5 class="card-title text-jin fw-bold">
+															java web购物商城
+														</h5>
+														<p class="card-text ellipsis2">
+															java web购物商城是一个多人合作项目，是一个传统的Java Web项目，使用了Spring框架和MySQL数据库，是一个传统的Java Web项目，使用了Spring框架和MySQL数据库，
+															提供商品分类导航，用户可根据分类轻松浏览商品。内置搜索引擎，支持关键词、商品系列分类等多重筛选，方便快速定位所需商品。采用响应式设计，首页布局精心安排，集成了商品推荐、热销榜单、新品速递等板块，吸引用户关注。
+														</p>
+														<div class="d-grid gap-2">
+															<button class="btn btn-jin text-dark fw-bold del-text" href="#" type="button" disabled>
+																预览
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- 学习认识jsp -->
+										<div class="card mb-3 px-2 text-bg-dark">
+											<div class="row g-0">
+												<div class="col-md-4">
+													<img src="images/xaingmu/学习.png" class="img-fluid img-fluid1 rounded-1 mt-3 logo" alt="...">
+												</div>
+												<div class="col-md-8">
+													<div class="card-body">
+														<h5 class="card-title text-jin fw-bold">
+															学习认识jsp
+														</h5>
+														<p class="card-text ellipsis2">
+															是一个课程学习，用于学习创建动态Web内容，认识HTML标记、JSP脚本元素、JSP指令、JSP动作，内部的所有网页均是用在jsp文件里写的，由html和jsp结合，
+															有对应的用户数据，在控制器中进行获取用户注册时表单提交的参数信息，验证参数填写是否符合要求等，有不同单元对应的服务层，还有数据传输对象等……
+														</p>
+														<div class="d-grid gap-2">
+															<button class="btn btn-jin text-dark fw-bold del-text" href="#" type="button" disabled>
+																预览
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 博客时间轴 -->
+						<div class="col-12 container animated fadeInUpBig mb-2">
+							<!-- 标题 -->
+							<h1 class="text-center fw-bolder py-3 clearfix" style="color: #F1CAAC;" id="BlogHistory">
+								<span class="d-block float-start mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+								<a class="title-small text-decoration-none text-jin" href="#tou">博&nbsp;客&nbsp;历&nbsp;程</a>
+								<span class="d-block float-end mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+							</h1>
+							<!-- 时间轴 -->
+							<div class="wrapper mt-lg-4 mt-sm-1 bg-dark text-white" style="border: 5px solid #212529;">
+								<div class="fish-bone"></div>
+							</div>
+						</div>
+						<!-- 工作经历 -->
+						<div class="col-12 container animated fadeInUpBig">
+							<!-- 标题 -->
+							<div class="mt-1 h1 text-center fw-bolder py-3 clearfix" style="color: #F1CAAC;" id="WorkExperience">
+								<span class="d-block float-start mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+									<a class="title-small text-decoration-none text-jin" href="#tou">工&nbsp;作&nbsp;经&nbsp;历</a>
+								<span class="d-block float-end mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+							</div>
+							<!-- 内容 align-middle：垂直居中；table-group-divider:加一条下框线；table-bordered：加线条；table-hover：鼠标悬浮改变颜色；table-ms：去除补丁-->
+							<table class="table table-dark table-striped table-hover mt-lg-4 mt-sm-1
+							 table-bordered text-center align-middle caption-top table-responsive">
+								<caption><a href="ftp/maobu.zip" class="text-secondary text-decoration-none">工作经历&nbsp;down</a></caption>
+								<thead class="">
+									<tr> 
+										<th>序号</th>
+										<th>时间段</th>
+										<th>单位</th>
+										<th>工作内容</th>
+									</tr>
+								</thead>
+								<tbody class="table-group-divider">
+									<tr>
+										<td>01</td>
+										<td>2117.1.1——2120.1.5</td>
+										<td>疼讯</td>
+										<td>客户：疼讯游戏中心官网网页维护</td>
+									</tr>
+									<tr>
+										<td>02</td>
+										<td>2120.1.6——2124.1.5</td>
+										<td>网亦</td>
+										<td>客户：网亦旗下游戏明日之后官网网页维护</td>
+									</tr>
+									<tr>
+										<td>03</td>
+										<td>2114.1.6——2129.1.5</td>
+										<td>白度</td>
+										<td>客户：www.beidu.com页面优化</td>
+									</tr>
+									<tr>
+										<td>04</td>
+										<td>2129.1.6——2139.1.5</td>
+										<td>谷哥</td>
+										<td>客户：www.googe.com页面优化</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 了解的游戏成就 -->
+						<div class="col-12 container animated fadeInUpBig">
+							<h1 class="text-center fw-bolder py-3 clearfix"
+							style="color: #F1CAAC;" id="GameRecord"
+							>
+								<span class="d-block float-start mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+								<a class="title-small text-decoration-none text-jin" 
+								href="#tou">游&nbsp;戏&nbsp;记&nbsp;录</a>
+								<span class="d-block float-end mt-4" style="border: 3px solid #F1CAAC;width: 40%;"></span>
+							</h1>
+							<div class="row mt-lg-4">
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game1.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">王者荣耀</h5>
+											<a href="https://pvp.qq.com/" class="ellipsis text-white">
+												《王者荣耀》是由腾讯游戏天美工作室群开发并运行的一款运营在Android、IOS、NS平台上的MOBA类国产手游
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game2.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">云顶之弈</h5>
+											<a href="https://lol.qq.com/main.shtml" class="ellipsis text-white">
+												《云顶之弈》是游戏《英雄联盟》中的一个回合制策略游戏模式，于9.13版本（简体中文服具体时间为2019年6月27日）正式上线。在云顶之弈模式中，每局比赛由八名玩家共同进行一对一决斗，直到场上只剩下最后一名玩家。获胜关键是在合理的战术策略下从随机化的英...
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game3.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">CS2</h5>
+											<a href="https://steam9.steampowere.cn/gameStore/detail16/1399?plan=BBD&kw=003&bd_vid=8851113250788588002" class="ellipsis text-white">
+												《反恐精英2》是由‌Valve公司开发并发行的一款在线射击游戏，前作为《反恐精英：全球攻势》，采用‌起源2（Source2）引擎，于2023年9月28日正式发行，支持‌Steam平台（国际）和完美世界平台（中国大陆）。
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game4.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">永劫无间</h5>
+											<a href="https://www.yjwujian.cn/" class="ellipsis text-white">
+												‌《永劫无间》是一款由网易旗下“‌24 Entertainment工作室”开发的多人动作竞技游戏，于2021年7月8日开启不删档测试，同年8月12日全球公测，并于2023年7月14日起转为免费游戏，同时登陆PS5平台。‌
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game5.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">明日之后</h5>
+											<a href="https://mrzh.163.com/dev/" class="ellipsis text-white">
+												《明日之后》是一款由杭州网易雷火科技有限公司运营的末日生存手机游戏，该作主打废土合作生存玩法，以在废土中引导玩家互相帮助，克服恶劣的生存环境为主要理念。以营地建设...
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game6.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">QQ飞车手游</h5>
+											<a href="https://feiche.qq.com/web201712/main.shtml" class="ellipsis text-white">
+												《QQ飞车手游》是深圳市腾讯计算机系统有限公司基于《QQ飞车》端游开发的首款3D赛车竞速休闲手机游戏，该作于2017年12月27日上线。游戏讲述了疾风、流火、幻想3个飞车王国，崇尚赛车文化。
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game7.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">第五人格</h5>
+											<a href=https://id5.163.com/index.html" class="ellipsis text-white">
+												《第五人格》是由网易开发的非对称性对抗竞技类（AsymmetricalBattleArena）游戏，游戏于2018年4月2日开启公测。玩...
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game8.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">火影忍者</h5>
+											<a href="https://syzs.qq.com/game/slg/hyrz?dyn_pack=1&media_id=01&media_type_id=0101019&owner_id=19&pay_id=10033019&ocpc=baidu-search&account_id=18421066&plan_id=460070093&group_id=9447811275&keyword_id=741496250531&creative_id=88473547720&adposition=cl1&pagenum=1&matchtype=1&ad_project_id=26&bd_vid=8028511573341969232" class="ellipsis text-white">
+												《火影忍者》手游作为正版火影忍者格斗手游,在严谨还原原作故事的基础上,独创忍术格斗系统,配合CG级华丽技能表现,尽兴体验酣畅淋漓的格斗连招;更可以自由收集热门忍者,追寻属于自己的英雄忍道!
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game9.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">Apex英雄</h5>
+											<a href="https://steam2.ssyxjs.cn/gameStore/detail12/1357?plan=APEX-20&e_creative=104001893061&e_keywordid=906601558250&bd_vid=8389160995148904625" class="ellipsis text-white">
+												《Apex英雄》是由《泰坦天降》制作组Respawn研发的一款战术竞技游戏。于2019年2月5日发行。玩家在游戏中将扮演外星战场上的星空战士。
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game10.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">使命召唤手游</h5>
+											<a href="https://codm.qq.com/main.shtml?ADTAG=cop.innercop.qqnetbar.advert_24169" class="ellipsis text-white">
+												是由深圳市腾讯计算机系统有限公司制作发行的一款大型多人在线第一人称射击类游戏，该作于2020年12月25日正式公开测试。国际服已于2019年9月30日正式开服。
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+									  <img src="images/game11.webp" class="card-img-top py-2 cursor">
+									  <div class="card-body">
+										<p class="card-text ellipsis1">
+											<h5 class="text-center">三角洲行动</h5>
+											<a href="https://df.qq.com/cp/a20240906fab/index-baidusem-PC.html" class="ellipsis text-white">
+												《‌三角洲行动》是一款由‌腾讯天美工作室群琳琅天上团队研发的多平台射击游戏，于2024年9月26日上线。‌玩家将扮演特战干员，前往‌阿萨拉大陆调查‌哈夫克公司的非法活动，通过运用各种战斗道具与装备，与队友紧密协作，灵活制定战术，完成各种极限任务。
+											</a>
+										</p>
+									  </div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-4  col-xl-3 pb-3 game-card d-lg-block d-none">
+									<div class="card w-100 text-bg-dark" style="width: 18rem;">
+										<div class="row g-0 gif1"> <!-- 使用 row 类来创建一个没有间距的行 -->
+											<div class="col-6">
+												<img src="images/chonger2.gif"class="w-100 card-img-top pt-2 cursor" style="transform: scaleX(-1);">
+											</div>
+											<div class="col-6">
+												<img src="images/dabao.gif"class="w-100 card-img-top pt-2 cursor">
+											</div>
+										</div>
+										<div class="card-body">
+											<p class="card-text ellipsis1">
+												<h5 class="text-center">三国杀</h5>
+												<a href="https://www.sanguosha.com/" class="ellipsis text-white">
+													原创三国题材策略卡牌游戏。支持PC、移动多端登录，数据互通！保留身份、国战经典玩法，创新推出2V2、斗地主模式，更有丰富主题的PVE玩法体验！怀旧国服，福利畅玩，等你体验！
+												</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- 弹性按钮，仅在屏幕宽度小于992px时显示 -->
+								<div class="col-12 d-lg-none">
+									<button class="btn btn-jin w-100 mt-3" id="toggleMoreGames">显示更多游戏记录</button>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- 模态框背景 -->
+				<div id="myModal" class="modal">
+					<!-- 关闭按钮 -->
+					<span class="close">&times;</span>
+					<!-- 放大后的图片容器 -->
+					<img class="modal-content" id="img01">
+					<!-- 图片标题/描述 -->
+					<div id="caption"></div>
+				</div>
+				<!-- 文字提示可以点击 -->
+				<div class="handclick d-none">
+					<div class="tip text-white">可以点击查看对应的内容哦!</div>
+				</div>
+			</div>
+			<!-- 内容区域结束 -->
+			
+			<!-- 结尾开始 -->
+			<div class="text-bg-dark pt-lg-4 text-center align-middle animated fadeInDownBig" style="height: 12rem;">
+				<!-- 结束了 -->
+				<div class="row text-bg-dark pt-lg-4 py-sm-5">
+					<div class="col-lg-4 d-none d-lg-inline">
+						<img src="images/shihe.gif" style="height: 7.5rem;width: 7.5rem;" class="rounded-2">
+					</div>
+					<div class="col-lg-4 py-lg-0 pb-sm-2">
+						<p class="mb-md-0 mb-lg-2">
+							<a class="text-decoration-none text-jin" href="https://s.weibo.com/weibo?q=%23%E5%BC%B1%E6%99%BA%E5%90%A7%E6%AF%8F%E5%91%A8%E6%9C%80%E4%BD%B3%23">
+								#弱智吧每周最佳#
+							</a> 
+							2023年第23周最佳<span class="text-danger">热评</span>
+						</p>
+						<span class="small">
+							<span class="text-jin">问：</span>小明压力太大连续喝酒死了，那杀死小明的是酒精还是过去？<br />
+							<span class="text-jin">答：</span>小明在过去和喝酒的时候都是活着的，所以杀死他的是未来。<br />
+						</span>
+					</div>
+					<div class="col-lg-4">
+						<div>
+							<div class="py-1 text-left">
+								<i class="bi bi-telephone  pe-2"></i>
+								联系方式：
+								<span class="small">13368377044</span>
+							</div>
+							<div class="py-1">
+								<i class="bi bi-envelope-paper pe-2"></i>
+								邮箱地址：
+								<span class="small">1919737272@qq.com</span>
+							</div>
+							<div class="py-1 shangwulianxijia4">
+								<i class="bi bi-headset  pe-2"></i>
+								商务联系：
+								<span class="small">186-xxxx-8689</span>
+							</div>
+							<div class="d-none d-lg-inline">
+								<small class=" text-white">
+									……
+								</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 结尾结束 -->
+			
+		</div>
+		<!-- XS下的提示信息 -->
+		<p id="xs-message" class="d-block d-sm-none text-danger fw-bolder fs-3 h1">
+			不支持此平台，请在大一点的设备(>=576px)上查看!
+		</p>
+		
+		
+
+		
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/motai.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/html2canvas.js"></script>
+		<script type="text/javascript" src="js/fishBone2.js"></script>
+		<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			//自我评价和电话的弹窗
+		    const popover1 = new bootstrap.Popover('.example-popover1', {
+		        container: 'body'
+		    });
+		    const popover2 = new bootstrap.Popover('.example-popover2', {
+		        container: 'body'
+		    });
+		
+		    // 游戏记录的收缩按钮
+		    document.getElementById('toggleMoreGames').addEventListener('click', function() {
+		        var cards = document.querySelectorAll('.game-card');
+		        for (var i = 4; i < cards.length; i++) {
+		            if (cards[i].classList.contains('d-none')) {
+		                cards[i].classList.remove('d-none');
+		                this.textContent = "收起游戏记录列表";
+		            } else {
+		                cards[i].classList.add('d-none');
+		                this.textContent = "显示更多游戏记录";
+		            }
+		        }
+		    });
+		
+			// 博客历程
+			var option = {
+		        data: [
+		            {
+		                label: '以初学的HTML5+css3知识编写了我的博客1.0',
+		                date: '2022年10月'
+		            },
+		            {
+		                label: '加入了swiper动态走马图，为提升我的博客美观',
+		                date: '2022年11月'
+		            },
+		            {
+		                label: '系统学习看js部分代码，可以完整更改我当初写的swiper',
+		                date: '2023年7月'
+		            },
+		            {
+		                label: '学习了bootstrap前段框架，开始更改我的博客可以适应于不同窗口大小的网页',
+		                date: '2024年9月'
+		            },
+		            {
+		                label: '修改了我的头部——导航条，改为bootstrap下的col类，也是更改为不同窗口下有不同效果',
+		                date: '2024年10月'
+		            },
+		            {
+		                label: '修改了我的swiper，改为getbootstrap.com网站里的Components下的carousel，以便更好的整合',
+		                date: '2024年10月'
+		            },
+		            {
+		                label: '改了内容框架，把导航条的内容关联到了内容部分，修改了布局效果，以便更美观',
+		                date: '2024年11月'
+		            },
+		            {
+		                label: '添加了大量的hover，因为有很多快捷点击方式或者查看方式，只有通过hover让其明显注意，才能吸引读者点击查看到不同的效果',
+		                date: '2024年11月'
+		            }
+		        ],
+		        color: "chocolate",
+		        dowload: true,
+		    };
+			fishBone.init(".fish-bone", option);
+		});
+		</script>
+	</body>
+</html>
